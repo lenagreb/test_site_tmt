@@ -223,8 +223,7 @@ address { font-style: normal; margin-bottom: 1.4rem; }
   background: var(--gold); color: var(--stage); border: 2px solid var(--gold);
 }
 .btn:hover { background: transparent; color: var(--gold); }
-.contacts { list-style: none; margin: .8rem 0 1.4rem; padding: 0; display: grid; gap: 8px; }
-.contacts a { text-underline-offset: 4px; }
+.partner__name { font-family: var(--font-display); font-size: clamp(1.4rem, 2.6vw, 1.9rem); color: var(--gold); margin: .6rem 0 1.4rem; line-height: 1.15; }
 
 .foot { background: var(--stage); color: rgba(246, 234, 210, .75); padding: 28px var(--gutter); font-size: .9rem; border-top: 1px solid rgba(233, 180, 76, .3); }
 .foot p { margin: 0 0 4px; max-width: none; }
