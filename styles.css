@@ -15,7 +15,7 @@
   --paper: #f6ead2;
 
   --font-display: "JetBrains Mono", "Consolas", "Courier New", monospace;
-  --font-body: "Golos Text", "Segoe UI", system-ui, sans-serif;
+  --font-body: "JetBrains Mono", "Consolas", "Courier New", monospace;
 
   --gutter: clamp(16px, 4vw, 48px);
   --measure: 62ch;
@@ -30,8 +30,8 @@ body {
   background: var(--stage);
   color: var(--paper);
   font-family: var(--font-body);
-  font-size: 1.0625rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -42,12 +42,12 @@ a:focus-visible, .btn:focus-visible {
   outline-offset: 3px;
 }
 p { margin: 0 0 1em; max-width: var(--measure); }
-h1, h2, h3 { font-family: var(--font-display); font-weight: 700; margin: 0; line-height: 1.2; letter-spacing: -0.02em; overflow-wrap: break-word; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 800; margin: 0; line-height: 1.2; letter-spacing: -0.02em; overflow-wrap: break-word; }
 h2 { font-size: clamp(1.6rem, 3.6vw, 2.7rem); max-width: 22ch; color: var(--gold); }
 h3 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); color: var(--paper); }
 
 .wrap { max-width: 1160px; margin: 0 auto; padding: clamp(56px, 9vw, 112px) var(--gutter); }
-.section-lead { font-size: 1.15rem; margin-top: 1rem; }
+.section-lead { font-size: 1.05rem; margin-top: 1rem; }
 
 .skip {
   position: absolute; left: 8px; top: -60px; z-index: 30;
@@ -125,7 +125,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); color: var(--paper); }
 .wrap--ornament { padding-left: calc(var(--gutter) + 72px); padding-right: calc(var(--gutter) + 72px); }
 
 .about { margin-top: 2.2rem; }
-.about__lead { font-size: clamp(1.2rem, 2vw, 1.5rem); line-height: 1.45; max-width: 46ch; }
+.about__lead { font-size: clamp(1.05rem, 1.7vw, 1.25rem); line-height: 1.55; max-width: 52ch; }
 .about__cols { display: grid; gap: 0 40px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-top: 1.6rem; }
 .triad { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 0; border-top: 2px solid var(--gold); }
 .triad li { display: grid; grid-template-columns: minmax(180px, 14rem) 1fr; gap: 8px 32px; padding: 16px 0; border-bottom: 1px solid rgba(233, 180, 76, .35); }
