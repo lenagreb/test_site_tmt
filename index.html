@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Театр. Мода. Технологии. Билибин. Наследие.</title>
+  <meta name="description" content="Фестиваль-лаборатория на стыке театра, моды и цифровых технологий. Сезон 2026 «Билибин. Наследие.», 23 октября, 14:00, учебный театр ТХТК.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&family=Ruslan+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#about">К содержанию</a>
+
+<header class="bar" id="top">
+  <a class="bar__name" href="#top">Театр. Мода. Технологии.</a>
+  <nav class="bar__nav" aria-label="Разделы">
+    <a href="#about">О проекте</a>
+    <a href="#program">Программа</a>
+    <a href="#yav">Явь</a>
+    <a href="#nav">Навь</a>
+    <a href="#mapping">Мэппинг</a>
+    <a href="#visit">Контакты</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Первый экран: афиша собирается из пикселей, дышит и снова рассыпается при прокрутке -->
+  <section class="hero" aria-labelledby="hero-title">
+    <h1 id="hero-title" class="visually-hidden">Театр. Мода. Технологии. Фестиваль-лаборатория «Билибин. Наследие.»</h1>
+    <div class="hero__stage">
+      <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+      <img class="hero__fallback" src="assets/poster.jpg" width="1280" height="720" alt="Афиша фестиваля-лаборатории «Театр. Мода. Технологии.»: портрет И.Я. Билибина, жар-птица, пиксельные экраны с цифровыми иллюстрациями и силуэты моделей на сцене. 95 лет ТХТК, 150 лет Билибину, 23 октября, 14:00, учебный театр ТХТК.">
+    </div>
+    <div class="hero__info">
+      <dl class="hero__facts">
+        <div><dt>Когда</dt><dd>23 октября 2026, 14:00</dd></div>
+        <div><dt>Где</dt><dd>Учебный театр ТХТК, Москва, 1-й Амбулаторный проезд, 8, стр. 2</dd></div>
+        <div><dt>Как попасть</dt><dd>Вход строго по приглашениям</dd></div>
+      </dl>
+      <p class="hero__count" id="countdown" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- О проекте -->
+  <section class="yav" id="about" aria-labelledby="about-title">
+    <div class="wrap wrap--ornament">
+      <h2 id="about-title">Фестиваль, где сказка встречается с кодом</h2>
+      <div class="about">
+        <p class="about__lead">Каждый сезон «Театр. Мода. Технологии.» выбирает одну культурную тему и превращает её в иммерсивное шоу-спектакль. В 2026 году тема - наследие Ивана Билибина: 150 лет со дня его рождения и 95 лет Театральному художественно-техническому колледжу.</p>
+        <div class="about__cols">
+          <p>На одной сцене собраны восемь коллекций молодых дизайнеров, цифровые аватары, нейросетевые анимации и видеомэппинг. Орнаменты Билибина оживают на стенах и «перетекают» на костюмы.</p>
+          <p>Это не конкурс. Дизайнеры приглашены заранее, а техническую часть шоу делают студенты колледжа: аниматоры, звукорежиссёры, видеоинженеры, осветители и гримёры.</p>
+        </div>
+        <ul class="triad">
+          <li><strong>Физическая коллекция</strong><span>Костюмы по мотивам билибинских иллюстраций в современном прочтении.</span></li>
+          <li><strong>Цифровая коллекция</strong><span>3D-аватары и анимированные образы, которые входят в сцену через мэппинг и LED-экраны.</span></li>
+          <li><strong>Сценография будущего</strong><span>Эскизы и макеты студентов к воображаемому спектаклю по сказкам Билибина.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Программа -->
+  <section class="program" id="program" aria-labelledby="program-title">
+    <div class="wrap">
+      <h2 id="program-title">Программа вечера</h2>
+      <p class="program__note">Весь показ идёт как одно действие, без пауз между блоками. Около часа.</p>
+      <ol class="acts">
+        <li class="act act--prologue">
+          <span class="act__time">2-3 мин</span>
+          <h3>Пролог</h3>
+          <p>Темнота, затем свет. Билибинские орнаменты на заднике начинают двигаться, будто их рисует невидимая рука. Голос за кадром открывает сезон.</p>
+        </li>
+        <li class="act act--yav">
+          <span class="act__time">Первый блок</span>
+          <h3>Явь</h3>
+          <p>Выход героев в физических костюмах. Для каждой коллекции мэппинг создаёт свою среду: болотные огни, всполохи пламени, терем.</p>
+        </li>
+        <li class="act act--nav">
+          <span class="act__time">Второй блок</span>
+          <h3>Навь</h3>
+          <p>Переход в цифровое пространство. Коллекции показаны на LED-экранах и через мэппинг, под экспериментальную электронную музыку.</p>
+        </li>
+        <li class="act act--synth">
+          <span class="act__time">Кульминация</span>
+          <h3>Синтез</h3>
+          <p>Модели в костюмах взаимодействуют с проекциями и AR-объектами. Орнаменты «перетекают» с экрана на ткань.</p>
+        </li>
+        <li class="act act--finale">
+          <span class="act__time">5-7 мин</span>
+          <h3>Финал</h3>
+          <p>Общий выход дизайнеров и моделей, финальный мэппинг и поздравление колледжа с юбилеем.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Явь -->
+  <section class="yav yav--collections" id="yav" aria-labelledby="yav-title">
+    <div class="wrap wrap--ornament">
+      <h2 id="yav-title">Явь. Физические коллекции</h2>
+      <p class="section-lead">Четыре коллекции, которые выходят на сцену в живых костюмах.</p>
+      <ul class="looks">
+        <li class="look">
+          <div class="look__photo" role="img" aria-label="Место для фото коллекции «Царевна»"><span>Фото скоро</span></div>
+          <h3>«Царевна»</h3>
+          <p class="look__author">Театральный художественно-технический колледж</p>
+          <p class="look__meta">5 образов. Студенческая коллекция, на фоне цифровых иллюстраций Билибина, которые нарисовала студентка 2 курса ХКО.</p>
+        </li>
+        <li class="look">
+          <div class="look__photo" role="img" aria-label="Место для фото коллекции «Душа моя»"><span>Фото скоро</span></div>
+          <h3>«Душа моя»</h3>
+          <p class="look__author">Детский театр моды «Каприз», Иваново</p>
+          <p class="look__meta">8 образов. Выходит со своими моделями и своей сценографией.</p>
+        </li>
+        <li class="look">
+          <div class="look__photo" role="img" aria-label="Место для фото коллекции «Бабушкины сказки»"><span>Фото скоро</span></div>
+          <h3>«Бабушкины сказки»</h3>
+          <p class="look__author">Александра Пронько, школа «Будем шить!», Москва</p>
+          <p class="look__meta">5 образов. Построена на билибинских иллюстрациях к сказкам.</p>
+        </li>
+        <li class="look">
+          <div class="look__photo" role="img" aria-label="Место для фото коллекции «Додоновское царство»"><span>Фото скоро</span></div>
+          <h3>«Додон»</h3>
+          <p class="look__author">Татьяна Гордеева, МГУТУ им. К.Г. Разумовского</p>
+          <p class="look__meta">5 образов, среди них два мужских. «Додоновское царство»: восточная сказка на русской сцене.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Навь -->
+  <section class="nav-sec" id="nav" aria-labelledby="nav-title">
+    <div class="wrap">
+      <h2 id="nav-title">Навь. Цифровые коллекции</h2>
+      <p class="section-lead">Те же сказки в другой материи: 3D-аватары, анимация и нейросети. Орнамент здесь распадается на пиксели и собирается снова.</p>
+      <ul class="looks looks--nav">
+        <li class="look">
+          <div class="look__photo" role="img" aria-label="Место для кадра коллекции «Веснушки»"><span>Кадр скоро</span></div>
+          <h3>«Веснушки»</h3>
+          <p class="look__author">Альбина Шмыголь и Ирина Курносова, Детский технопарк «На Зорге»</p>
+          <p class="look__meta">5 образов. Современное прочтение русского стиля. Впервые показана на фестивале «Предтечи 2.0» в июне 2026.</p>
+        </li>
+        <li class="look">
+          <div class="look__photo" role="img" aria-label="Место для кадра коллекции «Воспоминание сказки»"><span>Кадр скоро</span></div>
+          <h3>«Воспоминание сказки»</h3>
+          <p class="look__author">Мария Сазонова, МГУТУ им. К.Г. Разумовского</p>
+          <p class="look__meta">5 образов. Участвовала в фестивале «Предтечи 2.0».</p>
+        </li>
+        <li class="look">
+          <div class="look__photo" role="img" aria-label="Место для кадра коллекции «Архетип живого»"><span>Кадр скоро</span></div>
+          <h3>«Архетип живого»</h3>
+          <p class="look__author">Мария Барашева, колледж РГУ им. А.Н. Косыгина</p>
+          <p class="look__meta">5 образов. Театральный костюм, сделанный по итогам практики в театре.</p>
+        </li>
+        <li class="look">
+          <div class="look__photo" role="img" aria-label="Место для кадра коллекции «Царевна»"><span>Кадр скоро</span></div>
+          <h3>«Царевна»</h3>
+          <p class="look__author">LeGre (Лена Гребениченко)</p>
+          <p class="look__meta">6 образов. Билибинская графика и органический минимализм: модели выходят из песка, ткани и света.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Видеомэппинг -->
+  <section class="mapping" id="mapping" aria-labelledby="mapping-title">
+    <div class="wrap mapping__grid">
+      <div class="mapping__text">
+        <h2 id="mapping-title">Пространство как продолжение тела</h2>
+        <p>Видеомэппинг здесь не фон для костюма. Он продолжает костюм: модель - это орнамент, который сошёл со стены и пошёл. Или наоборот, стена - ткань, которая ещё не стала платьем.</p>
+        <p>Над цифровыми декорациями работают студенты колледжа, а для коллекции «Царевна» мэппинг строится как четыре состояния: тишина каньона, охристое открытие, бирюзовая кульминация и финал в жидком серебре.</p>
+      </div>
+      <figure class="mapping__fig">
+        <img src="assets/mapping-forest.jpg" alt="Кадр видеомэппинга в манере Билибина: заснеженный лес на закате, дорога и река" loading="lazy">
+        <figcaption>Кадр из материалов видеомэппинга</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Репетиции -->
+  <section class="rehearsal" id="rehearsal" aria-labelledby="rehearsal-title">
+    <div class="wrap">
+      <h2 id="rehearsal-title">Репетиции</h2>
+      <p class="section-lead">Фотографии и видео с репетиций появятся здесь после прогонов в театре.</p>
+      <ul class="frames">
+        <li class="frame frame--wide"><span>Фото репетиции</span></li>
+        <li class="frame"><span>Фото репетиции</span></li>
+        <li class="frame"><span>Фото репетиции</span></li>
+        <li class="frame frame--wide"><span>Видео репетиции</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Команда и партнёры -->
+  <section class="team" id="team" aria-labelledby="team-title">
+    <div class="wrap team__grid">
+      <div>
+        <h2 id="team-title">Кто делает шоу</h2>
+        <p class="team__author"><strong>Лена Гребениченко (LeGre)</strong><br>автор идеи и креативный продюсер</p>
+        <p>Команда колледжа: студенты-аниматоры, звукорежиссёры, монтажёры, гримёры, осветители и видеоинженеры работают под руководством наставников и приглашённых экспертов.</p>
+      </div>
+      <div>
+        <h3>Партнёры сезона</h3>
+        <p>Мы открыты к информационным, индустриальным и технологическим партнёрам: модельным агентствам, театрам, музеям, компаниям из сферы 3D, AR/VR, проекционного и светового оборудования.</p>
+        <p class="team__slots" aria-label="Места для логотипов партнёров">
+          <span>Логотип партнёра</span><span>Логотип партнёра</span><span>Логотип партнёра</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap visit__grid">
+      <div>
+        <h2 id="visit-title">23 октября в 14:00, учебный театр ТХТК</h2>
+        <p class="visit__big">Вход строго по приглашениям.</p>
+        <address>
+          Москва, 1-й Амбулаторный проезд, д. 8, стр. 2<br>
+          Метро «Аэропорт»
+        </address>
+        <a class="btn" href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%201-%D0%B9%20%D0%90%D0%BC%D0%B1%D1%83%D0%BB%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%B7%D0%B4%2C%208%D1%81" target="_blank" rel="noopener">Открыть на карте</a>
+      </div>
+      <div>
+        <h3>Связаться с продюсером</h3>
+        <ul class="contacts">
+          <li><a href="mailto:grebenichenko@mail.ru">grebenichenko@mail.ru</a></li>
+          <li><a href="https://t.me/LeGreDesign" target="_blank" rel="noopener">Telegram: LeGreDesign</a></li>
+          <li><a href="https://vk.ru/legredesign" target="_blank" rel="noopener">ВКонтакте: legredesign</a></li>
+          <li><a href="https://t.me/LeGreFashion" target="_blank" rel="noopener">Канал: LeGreFashion</a></li>
+        </ul>
+        <p class="visit__next">Хотите показать коллекцию в следующем сезоне? Напишите продюсеру.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>Театр. Мода. Технологии. Сезон 2026. Идея и продюсирование: LeGre.</p>
+  <p>Афиша, орнаментальные полосы и кадр мэппинга: материалы проекта.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
