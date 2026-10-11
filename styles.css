@@ -14,7 +14,7 @@
   --cyan: #7fd0ff;
   --paper: #f6ead2;
 
-  --font-display: "Ruslan Display", "Georgia", serif;
+  --font-display: "JetBrains Mono", "Consolas", "Courier New", monospace;
   --font-body: "Golos Text", "Segoe UI", system-ui, sans-serif;
 
   --gutter: clamp(16px, 4vw, 48px);
@@ -42,9 +42,9 @@ a:focus-visible, .btn:focus-visible {
   outline-offset: 3px;
 }
 p { margin: 0 0 1em; max-width: var(--measure); }
-h1, h2, h3 { font-family: var(--font-display); font-weight: 400; margin: 0; line-height: 1.08; }
-h2 { font-size: clamp(2rem, 4.6vw, 3.6rem); max-width: 18ch; color: var(--gold); }
-h3 { font-size: clamp(1.4rem, 2.2vw, 1.85rem); color: var(--paper); }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 700; margin: 0; line-height: 1.2; letter-spacing: -0.02em; overflow-wrap: break-word; }
+h2 { font-size: clamp(1.6rem, 3.6vw, 2.7rem); max-width: 22ch; color: var(--gold); }
+h3 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); color: var(--paper); }
 
 .wrap { max-width: 1160px; margin: 0 auto; padding: clamp(56px, 9vw, 112px) var(--gutter); }
 .section-lead { font-size: 1.15rem; margin-top: 1rem; }
@@ -70,7 +70,7 @@ h3 { font-size: clamp(1.4rem, 2.2vw, 1.85rem); color: var(--paper); }
   color: var(--paper);
   border-bottom: 2px solid var(--gold);
 }
-.bar__name { font-family: var(--font-display); font-size: 1.25rem; color: var(--gold); text-decoration: none; }
+.bar__name { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--gold); text-decoration: none; }
 .bar__nav { display: flex; flex-wrap: wrap; gap: 2px 18px; font-size: .95rem; }
 .bar__nav a { text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
 .bar__nav a:hover { border-bottom-color: var(--ember); }
@@ -129,7 +129,7 @@ h3 { font-size: clamp(1.4rem, 2.2vw, 1.85rem); color: var(--paper); }
 .about__cols { display: grid; gap: 0 40px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-top: 1.6rem; }
 .triad { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 0; border-top: 2px solid var(--gold); }
 .triad li { display: grid; grid-template-columns: minmax(180px, 14rem) 1fr; gap: 8px 32px; padding: 16px 0; border-bottom: 1px solid rgba(233, 180, 76, .35); }
-.triad strong { font-family: var(--font-display); font-weight: 400; font-size: 1.35rem; color: var(--gold); }
+.triad strong { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; line-height: 1.35; color: var(--gold); }
 
 /* Программа: каждый блок окрашен в цвет своей стихии */
 .program { background: var(--stage); color: var(--paper); }
@@ -223,7 +223,7 @@ address { font-style: normal; margin-bottom: 1.4rem; }
   background: var(--gold); color: var(--stage); border: 2px solid var(--gold);
 }
 .btn:hover { background: transparent; color: var(--gold); }
-.partner__name { font-family: var(--font-display); font-size: clamp(1.4rem, 2.6vw, 1.9rem); color: var(--gold); margin: .6rem 0 1.4rem; line-height: 1.15; }
+.partner__name { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.15rem, 2vw, 1.5rem); color: var(--gold); margin: .6rem 0 1.4rem; line-height: 1.3; }
 
 .foot { background: var(--stage); color: rgba(246, 234, 210, .75); padding: 28px var(--gutter); font-size: .9rem; border-top: 1px solid rgba(233, 180, 76, .3); }
 .foot p { margin: 0 0 4px; max-width: none; }
